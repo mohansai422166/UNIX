@@ -1,0 +1,35 @@
+tar cvf file.tar *.txt OUTPUT: 
+
+awk.txt
+sed.txt
+tar.txt
+Text22.txt
+
+tar xvf file.tar OUTPUT: 
+
+awk.txt
+sed.txt
+tar.txt
+Text22.txt
+
+tar cvzf file.tar.gz *.txt OUTPUT: 
+
+awk.txt
+sed.txt
+tar.txt
+Text22.txt
+
+tar -czf - file.tar | wc -c OUTPUT: 
+
+680
+
+tar -tvf file.tar OUTPUT: 
+
+-rw-rw-r-- student/student 859 2024-03-04 12:06 awk.txt
+-rw-rw-r-- student/student 1230 2024-03-04 12:07 sed.txt
+-rw-rw-r-- student/student   49 2024-03-04 12:08 tar.txt
+-rw------- student/student  114 2024-03-04 12:04 Text22.txt
+
+tar tvf file.tar Text1.txt OUTPUT: 
+
+-rw------- student/student 114 2024-03-04 12:04 Text22.txt

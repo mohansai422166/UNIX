@@ -1,0 +1,71 @@
+sed 's/sales/accountant/' Text2.txt OUTPUT: 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+3 n3 300 20 manager
+4 n4 400 21 accountant
+5 n5 500 22 account
+6 n6 600 23 accountant
+
+sed 's/sales/accountant/g' Text22.txt OUTPUT: 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+3 n3 300 20 manager
+4 n4 400 21 accountant
+5 n5 500 22 account
+6 n6 600 23 accountant
+
+sed '8s/sales/accountant/' Text22.txt OUTPUT: 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+3 n3 300 20 manager
+4 n4 400 21 sales
+5 n5 500 22 account
+6 n6 600 23 sales
+
+sed '8s/sales/accountant/p' Text22.txt OUTPUT: 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+3 n3 300 20 manager
+4 n4 400 21 sales
+5 n5 500 22 account
+6 n6 600 23 sales
+
+sed -n '8s/sales/accountant/' Text22.txt OUTPUT: 
+
+
+sed '5d' Text22.txt OUTPUT : 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+3 n3 300 20 manager
+4 n4 400 21 sales
+6 n6 600 23 sales
+
+sed '' Text22.txt OUTPUT : 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+3 n3 300 20 manager
+4 n4 400 21 sales
+5 n5 500 22 account
+
+sed '3,7d' Text22.txt OUTPUT : 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+
+sed '3,' Text22.txt OUTPUT : 
+
+1 n1 100 18 manager
+2 n2 200 19 clerk
+
+sed '/manager/d' Text22.txt OUTPUT : 
+
+2 n2 200 19 clerk
+4 n4 400 21 sales
+5 n5 500 22 account
+6 n6 600 23 sales

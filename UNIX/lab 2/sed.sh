@@ -1,0 +1,21 @@
+#!bin/bash
+echo -e "sed 's/sales/accountant/' Text2.txt OUTPUT: \n";
+sed 's/sales/accountant/' Text22.txt;
+echo -e "\nsed 's/sales/accountant/g' Text22.txt OUTPUT: \n";
+sed 's/sales/accountant/g' Text22.txt;
+echo -e "\nsed '8s/sales/accountant/' Text22.txt OUTPUT: \n";
+sed '8s/sales/accountant/' Text22.txt;
+echo -e "\nsed '8s/sales/accountant/p' Text22.txt OUTPUT: \n";
+sed '8s/sales/accountant/p' Text22.txt;
+echo -e "\nsed -n '8s/sales/accountant/' Text22.txt OUTPUT: \n";
+sed -n '8s/sales/accountant/p' Text22.txt;
+echo -e "\nsed '5d' Text22.txt OUTPUT : \n";
+sed '5d' Text22.txt;
+echo -e "\nsed '$d' Text22.txt OUTPUT : \n";
+sed '$d' Text22.txt;
+echo -e "\nsed '3,7d' Text22.txt OUTPUT : \n";
+sed '3,7d' Text22.txt;
+echo -e "\nsed '3,$d' Text22.txt OUTPUT : \n";
+sed '3,$d' Text22.txt;
+echo -e "\nsed '/manager/d' Text22.txt OUTPUT : \n";
+sed '/manager/d' Text22.txt;

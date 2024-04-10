@@ -1,0 +1,8 @@
+cpio: 1 n1 100 18 manager: Cannot stat: No such file or directory
+cpio: 2 n2 200 19 clerk: Cannot stat: No such file or directory
+cpio: 3 n3 300 20 manager: Cannot stat: No such file or directory
+cpio: 4 n4 400 21 sales: Cannot stat: No such file or directory
+cpio: 5 n5 500 22 account: Cannot stat: No such file or directory
+cpio: 6 n6 600 23 sales: Cannot stat: No such file or directory
+1 block
+1 block
